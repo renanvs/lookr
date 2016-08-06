@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E1CE9C81D5687E900854BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */; };
+		1E1CE9CA1D5687E900854BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CE9C91D5687E900854BF0 /* ViewController.swift */; };
+		1E1CE9CD1D5687E900854BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9CB1D5687E900854BF0 /* Main.storyboard */; };
+		1E1CE9CF1D5687E900854BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */; };
+		1E1CE9D21D5687E900854BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */; };
+		1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */; };
+		1ECAC4BB1D569272006126D1 /* LKRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4BA1D569272006126D1 /* LKRequestService.swift */; };
+		CE1C9E06DAE5FC9D560C3E15 /* libPods-Lookr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CDF23F784A20F83392D1F /* libPods-Lookr.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E1CE9C41D5687E900854BF0 /* Lookr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lookr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E1CE9C91D5687E900854BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E1CE9CC1D5687E900854BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E1CE9D11D5687E900854BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E1CE9D31D5687E900854BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBaseAPIService.swift; sourceTree = "<group>"; };
+		1ECAC4B91D568B58006126D1 /* Lookr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lookr-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		1ECAC4BA1D569272006126D1 /* LKRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRequestService.swift; sourceTree = "<group>"; };
+		202CDF23F784A20F83392D1F /* libPods-Lookr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lookr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.release.xcconfig"; sourceTree = "<group>"; };
+		CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E1CE9C11D5687E900854BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1C9E06DAE5FC9D560C3E15 /* libPods-Lookr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E1CE9BB1D5687E900854BF0 = {
+			isa = PBXGroup;
+			children = (
+				1E1CE9C61D5687E900854BF0 /* Lookr */,
+				1E1CE9C51D5687E900854BF0 /* Products */,
+				417A6D6381F13F46FD135579 /* Pods */,
+				84AB4DAE18D5AE8B46A55859 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E1CE9C51D5687E900854BF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E1CE9C41D5687E900854BF0 /* Lookr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E1CE9C61D5687E900854BF0 /* Lookr */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4B11D568930006126D1 /* Services */,
+				1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */,
+				1E1CE9C91D5687E900854BF0 /* ViewController.swift */,
+				1ECAC4B91D568B58006126D1 /* Lookr-Bridging-Header.h */,
+				1E1CE9CB1D5687E900854BF0 /* Main.storyboard */,
+				1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */,
+				1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */,
+				1E1CE9D31D5687E900854BF0 /* Info.plist */,
+			);
+			path = Lookr;
+			sourceTree = "<group>";
+		};
+		1ECAC4B11D568930006126D1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4B21D568930006126D1 /* base */,
+				1ECAC4BA1D569272006126D1 /* LKRequestService.swift */,
+			);
+			path = Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		1ECAC4B21D568930006126D1 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		417A6D6381F13F46FD135579 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */,
+				36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84AB4DAE18D5AE8B46A55859 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				202CDF23F784A20F83392D1F /* libPods-Lookr.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E1CE9C31D5687E900854BF0 /* Lookr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E1CE9D61D5687E900854BF0 /* Build configuration list for PBXNativeTarget "Lookr" */;
+			buildPhases = (
+				4D4A26DDDE676104683D082B /* [CP] Check Pods Manifest.lock */,
+				1E1CE9C01D5687E900854BF0 /* Sources */,
+				1E1CE9C11D5687E900854BF0 /* Frameworks */,
+				1E1CE9C21D5687E900854BF0 /* Resources */,
+				E0516958D35D0896A6994AEB /* [CP] Embed Pods Frameworks */,
+				1F8C452CD4B44A47D79E5DD7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lookr;
+			productName = Lookr;
+			productReference = 1E1CE9C41D5687E900854BF0 /* Lookr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E1CE9BC1D5687E900854BF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = rvsz;
+				TargetAttributes = {
+					1E1CE9C31D5687E900854BF0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1E1CE9BF1D5687E900854BF0 /* Build configuration list for PBXProject "Lookr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E1CE9BB1D5687E900854BF0;
+			productRefGroup = 1E1CE9C51D5687E900854BF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E1CE9C31D5687E900854BF0 /* Lookr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E1CE9C21D5687E900854BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1CE9D21D5687E900854BF0 /* LaunchScreen.storyboard in Resources */,
+				1E1CE9CF1D5687E900854BF0 /* Assets.xcassets in Resources */,
+				1E1CE9CD1D5687E900854BF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8C452CD4B44A47D79E5DD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lookr/Pods-Lookr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D4A26DDDE676104683D082B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0516958D35D0896A6994AEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lookr/Pods-Lookr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E1CE9C01D5687E900854BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */,
+				1E1CE9CA1D5687E900854BF0 /* ViewController.swift in Sources */,
+				1ECAC4BB1D569272006126D1 /* LKRequestService.swift in Sources */,
+				1E1CE9C81D5687E900854BF0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E1CE9CB1D5687E900854BF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E1CE9CC1D5687E900854BF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E1CE9D11D5687E900854BF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E1CE9D41D5687E900854BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E1CE9D51D5687E900854BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E1CE9D71D5687E900854BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Lookr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rvsz.lookr.Lookr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lookr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E1CE9D81D5687E900854BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Lookr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.rvsz.lookr.Lookr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lookr-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E1CE9BF1D5687E900854BF0 /* Build configuration list for PBXProject "Lookr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E1CE9D41D5687E900854BF0 /* Debug */,
+				1E1CE9D51D5687E900854BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E1CE9D61D5687E900854BF0 /* Build configuration list for PBXNativeTarget "Lookr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E1CE9D71D5687E900854BF0 /* Debug */,
+				1E1CE9D81D5687E900854BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E1CE9BC1D5687E900854BF0 /* Project object */;
+}
