@@ -22,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print("321")
 //        }
         
+        let loginController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LKLoginViewController") as! LKLoginViewController
+        let navigationController = LKNavigationController(rootViewController: loginController)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = navigationController
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

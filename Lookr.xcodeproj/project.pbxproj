@@ -8,26 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		1E1CE9C81D5687E900854BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */; };
-		1E1CE9CA1D5687E900854BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1CE9C91D5687E900854BF0 /* ViewController.swift */; };
 		1E1CE9CD1D5687E900854BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9CB1D5687E900854BF0 /* Main.storyboard */; };
 		1E1CE9CF1D5687E900854BF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */; };
-		1E1CE9D21D5687E900854BF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */; };
 		1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */; };
 		1ECAC4BB1D569272006126D1 /* LKRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4BA1D569272006126D1 /* LKRequestService.swift */; };
+		1ECAC4C61D569F45006126D1 /* Facebook_Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4BD1D569F45006126D1 /* Facebook_Login.png */; };
+		1ECAC4C71D569F45006126D1 /* Facebook_Login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4BE1D569F45006126D1 /* Facebook_Login@2x.png */; };
+		1ECAC4C81D569F45006126D1 /* Facebook_Login@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4BF1D569F45006126D1 /* Facebook_Login@3x.png */; };
+		1ECAC4C91D569F45006126D1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C01D569F45006126D1 /* logo.png */; };
+		1ECAC4CA1D569F45006126D1 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C11D569F45006126D1 /* logo@2x.png */; };
+		1ECAC4CB1D569F45006126D1 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C21D569F45006126D1 /* logo@3x.png */; };
+		1ECAC4CC1D569F45006126D1 /* Mantra.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C31D569F45006126D1 /* Mantra.png */; };
+		1ECAC4CD1D569F45006126D1 /* Mantra@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C41D569F45006126D1 /* Mantra@2x.png */; };
+		1ECAC4CE1D569F45006126D1 /* Mantra@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4C51D569F45006126D1 /* Mantra@3x.png */; };
+		1ECAC4D21D56A01D006126D1 /* LKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4D11D56A01D006126D1 /* LKLoginViewController.swift */; };
+		1ECAC4D41D56A09C006126D1 /* LKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4D31D56A09C006126D1 /* LKNavigationController.swift */; };
+		1ECAC4DA1D56A176006126D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ECAC4D91D56A176006126D1 /* Default-568h@2x.png */; };
 		CE1C9E06DAE5FC9D560C3E15 /* libPods-Lookr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CDF23F784A20F83392D1F /* libPods-Lookr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1E1CE9C41D5687E900854BF0 /* Lookr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lookr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E1CE9C91D5687E900854BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E1CE9CC1D5687E900854BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1E1CE9D11D5687E900854BF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E1CE9D31D5687E900854BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKBaseAPIService.swift; sourceTree = "<group>"; };
 		1ECAC4B91D568B58006126D1 /* Lookr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lookr-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		1ECAC4BA1D569272006126D1 /* LKRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKRequestService.swift; sourceTree = "<group>"; };
+		1ECAC4BD1D569F45006126D1 /* Facebook_Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook_Login.png; sourceTree = "<group>"; };
+		1ECAC4BE1D569F45006126D1 /* Facebook_Login@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook_Login@2x.png"; sourceTree = "<group>"; };
+		1ECAC4BF1D569F45006126D1 /* Facebook_Login@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook_Login@3x.png"; sourceTree = "<group>"; };
+		1ECAC4C01D569F45006126D1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1ECAC4C11D569F45006126D1 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		1ECAC4C21D569F45006126D1 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+		1ECAC4C31D569F45006126D1 /* Mantra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mantra.png; sourceTree = "<group>"; };
+		1ECAC4C41D569F45006126D1 /* Mantra@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mantra@2x.png"; sourceTree = "<group>"; };
+		1ECAC4C51D569F45006126D1 /* Mantra@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mantra@3x.png"; sourceTree = "<group>"; };
+		1ECAC4D11D56A01D006126D1 /* LKLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLoginViewController.swift; sourceTree = "<group>"; };
+		1ECAC4D31D56A09C006126D1 /* LKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNavigationController.swift; sourceTree = "<group>"; };
+		1ECAC4D91D56A176006126D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		202CDF23F784A20F83392D1F /* libPods-Lookr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lookr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.release.xcconfig"; sourceTree = "<group>"; };
 		CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,13 +86,14 @@
 		1E1CE9C61D5687E900854BF0 /* Lookr */ = {
 			isa = PBXGroup;
 			children = (
+				1ECAC4CF1D569FFD006126D1 /* Controllers */,
+				1ECAC4BC1D569F45006126D1 /* Images */,
 				1ECAC4B11D568930006126D1 /* Services */,
 				1E1CE9C71D5687E900854BF0 /* AppDelegate.swift */,
-				1E1CE9C91D5687E900854BF0 /* ViewController.swift */,
 				1ECAC4B91D568B58006126D1 /* Lookr-Bridging-Header.h */,
+				1ECAC4D91D56A176006126D1 /* Default-568h@2x.png */,
 				1E1CE9CB1D5687E900854BF0 /* Main.storyboard */,
 				1E1CE9CE1D5687E900854BF0 /* Assets.xcassets */,
-				1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */,
 				1E1CE9D31D5687E900854BF0 /* Info.plist */,
 			);
 			path = Lookr;
@@ -91,6 +112,39 @@
 			isa = PBXGroup;
 			children = (
 				1ECAC4B31D56899C006126D1 /* LKBaseAPIService.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		1ECAC4BC1D569F45006126D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4BD1D569F45006126D1 /* Facebook_Login.png */,
+				1ECAC4BE1D569F45006126D1 /* Facebook_Login@2x.png */,
+				1ECAC4BF1D569F45006126D1 /* Facebook_Login@3x.png */,
+				1ECAC4C01D569F45006126D1 /* logo.png */,
+				1ECAC4C11D569F45006126D1 /* logo@2x.png */,
+				1ECAC4C21D569F45006126D1 /* logo@3x.png */,
+				1ECAC4C31D569F45006126D1 /* Mantra.png */,
+				1ECAC4C41D569F45006126D1 /* Mantra@2x.png */,
+				1ECAC4C51D569F45006126D1 /* Mantra@3x.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		1ECAC4CF1D569FFD006126D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4D01D569FFD006126D1 /* base */,
+				1ECAC4D11D56A01D006126D1 /* LKLoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		1ECAC4D01D569FFD006126D1 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4D31D56A09C006126D1 /* LKNavigationController.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -173,9 +227,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1CE9D21D5687E900854BF0 /* LaunchScreen.storyboard in Resources */,
+				1ECAC4CB1D569F45006126D1 /* logo@3x.png in Resources */,
+				1ECAC4CA1D569F45006126D1 /* logo@2x.png in Resources */,
 				1E1CE9CF1D5687E900854BF0 /* Assets.xcassets in Resources */,
+				1ECAC4CC1D569F45006126D1 /* Mantra.png in Resources */,
+				1ECAC4C71D569F45006126D1 /* Facebook_Login@2x.png in Resources */,
+				1ECAC4DA1D56A176006126D1 /* Default-568h@2x.png in Resources */,
 				1E1CE9CD1D5687E900854BF0 /* Main.storyboard in Resources */,
+				1ECAC4C91D569F45006126D1 /* logo.png in Resources */,
+				1ECAC4CD1D569F45006126D1 /* Mantra@2x.png in Resources */,
+				1ECAC4C61D569F45006126D1 /* Facebook_Login.png in Resources */,
+				1ECAC4CE1D569F45006126D1 /* Mantra@3x.png in Resources */,
+				1ECAC4C81D569F45006126D1 /* Facebook_Login@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */,
-				1E1CE9CA1D5687E900854BF0 /* ViewController.swift in Sources */,
+				1ECAC4D41D56A09C006126D1 /* LKNavigationController.swift in Sources */,
+				1ECAC4D21D56A01D006126D1 /* LKLoginViewController.swift in Sources */,
 				1ECAC4BB1D569272006126D1 /* LKRequestService.swift in Sources */,
 				1E1CE9C81D5687E900854BF0 /* AppDelegate.swift in Sources */,
 			);
@@ -250,14 +314,6 @@
 				1E1CE9CC1D5687E900854BF0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1E1CE9D01D5687E900854BF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E1CE9D11D5687E900854BF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
