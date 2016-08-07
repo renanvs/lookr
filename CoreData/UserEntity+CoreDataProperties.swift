@@ -14,14 +14,15 @@ import CoreData
 
 extension UserEntity {
 
-    @NSManaged var identifier: String!
-    @NSManaged var name: String!
     @NSManaged var email: String!
     @NSManaged var facebookID: String!
+    @NSManaged var identifier: String!
+    @NSManaged var isMe: NSNumber!
+    @NSManaged var name: String!
     @NSManaged var photoURI: String?
-    @NSManaged var qtyPublications: NSNumber!
     @NSManaged var qtyFollowers: NSNumber!
     @NSManaged var qtyFollowings: NSNumber!
-    @NSManaged var isMe: NSNumber!
+    @NSManaged var qtyPublications: NSNumber!
+    @NSManaged var birthday: String?
 
 }
