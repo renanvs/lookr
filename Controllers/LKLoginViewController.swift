@@ -13,24 +13,27 @@ class LKLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func facebookLoginHandler(){
+        if LKFacebookService.isLogged(){
+            LKFacebookService.requestUserData({ (userModel, error) in
+                if error != nil{
+                    LKUtils.simpleAlert(error!.localizedDescription)
+                }else{
+                    LKUtils.simpleAlert(userModel!.description)
+                }
+            })
+        }else{
+            LKFacebookService.login({ (error, cancelByUser, facebookUser) in
+                if error != nil{
+                    LKUtils.simpleAlert(error!.localizedDescription)
+                }else if cancelByUser{
+                    LKUtils.simpleAlert("User Canceled")
+                }else{
+                    LKUtils.simpleAlert(facebookUser!.description)
+                }
+            })
+        }
     }
-    */
-
 }
