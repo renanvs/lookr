@@ -38,6 +38,7 @@
 		1ECAC5041D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC5021D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift */; };
 		1ECAC5051D57A6F0006126D1 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC5031D57A6F0006126D1 /* UserEntity.swift */; };
 		1ECAC5071D57ACD2006126D1 /* LKUserRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC5061D57ACD2006126D1 /* LKUserRequestService.swift */; };
+		1EE3E3C91D57C9540011875D /* LKTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE3E3C81D57C9540011875D /* LKTimeLineViewController.swift */; };
 		CE1C9E06DAE5FC9D560C3E15 /* libPods-Lookr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CDF23F784A20F83392D1F /* libPods-Lookr.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		1ECAC5021D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1ECAC5031D57A6F0006126D1 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		1ECAC5061D57ACD2006126D1 /* LKUserRequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKUserRequestService.swift; sourceTree = "<group>"; };
+		1EE3E3C81D57C9540011875D /* LKTimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKTimeLineViewController.swift; sourceTree = "<group>"; };
 		202CDF23F784A20F83392D1F /* libPods-Lookr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lookr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.release.xcconfig"; sourceTree = "<group>"; };
 		CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				1ECAC4D01D569FFD006126D1 /* base */,
 				1ECAC4D11D56A01D006126D1 /* LKLoginViewController.swift */,
+				1EE3E3C81D57C9540011875D /* LKTimeLineViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = SOURCE_ROOT;
@@ -399,6 +402,7 @@
 				1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */,
 				1ECAC4EE1D579736006126D1 /* SwiftUtils.swift in Sources */,
 				1ECAC4D41D56A09C006126D1 /* LKNavigationController.swift in Sources */,
+				1EE3E3C91D57C9540011875D /* LKTimeLineViewController.swift in Sources */,
 				1ECAC4F41D57A14C006126D1 /* LKCoreDataBase.swift in Sources */,
 				1ECAC4E41D56A5EE006126D1 /* LKFacebookService.swift in Sources */,
 				1ECAC4D21D56A01D006126D1 /* LKLoginViewController.swift in Sources */,

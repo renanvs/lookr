@@ -36,5 +36,42 @@ class UserEntity: NSManagedObject {
         
         return entity
     }
+    
+    class func hasUserLogged() -> Bool{
+        if getMyUserEntityCanBeNull() == nil{
+            return false
+        }
+        
+        return true
+    }
+    
+    class func getMyUserEntity() -> UserEntity{
+        return getMyUserEntityCanBeNull()!
+    }
+    
+    private class func getMyUserEntityCanBeNull() -> UserEntity?{
+        let predicate = NSPredicate(format: "isMe == true")
+        
+        let ctx = LKCoreDataBase.sharedInstance.managedObjectContext
+        let entityDescription = NSEntityDescription.entityForName(NSStringFromClass(UserEntity), inManagedObjectContext: ctx)
+        
+        let fetchRequest = NSFetchRequest()
+        fetchRequest.entity = entityDescription
+        fetchRequest.predicate = predicate
+        
+        var users = [UserEntity]()
+        
+        do{
+           try users = ctx.executeFetchRequest(fetchRequest) as! [UserEntity]
+        }catch{
+            print(error)
+        }
+        
+        if users.count > 0 {
+            return users.first!
+        }
+        
+        return nil
+    }
 
 }

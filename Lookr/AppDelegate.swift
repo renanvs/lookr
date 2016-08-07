@@ -13,24 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-//        LKRequestService.GET("User/Search", params: ["name":"victor"], success: { (obj) in
-//            print("123")
-//            }) { (error, response) in
-//                print("321")
-//        }
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-        let loginController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LKLoginViewController") as! LKLoginViewController
-        let navigationController = LKNavigationController(rootViewController: loginController)
-        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        window?.rootViewController = navigationController
-        
+        window?.rootViewController = LKUtils.getCorrectInitialController()
         window?.makeKeyAndVisible()
         
         return true

@@ -15,4 +15,18 @@ class LKUtils: NSObject {
         let window = UIApplication.sharedApplication().delegate?.window!
         window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    class func getCorrectInitialController() -> UIViewController{
+        
+        if UserEntity.hasUserLogged(){
+            let timeLineController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LKTimeLineViewController") as!LKTimeLineViewController
+            let navigationController = LKNavigationController(rootViewController: timeLineController)
+            return navigationController
+        }else{
+            let loginController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LKLoginViewController") as! LKLoginViewController
+            let navigationController = LKNavigationController(rootViewController: loginController)
+            return navigationController
+        }
+        
+    }
 }
