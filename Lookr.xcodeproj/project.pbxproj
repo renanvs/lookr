@@ -33,6 +33,10 @@
 		1ECAC4EE1D579736006126D1 /* SwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4EB1D579736006126D1 /* SwiftUtils.swift */; };
 		1ECAC4EF1D579736006126D1 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4ED1D579736006126D1 /* Utils.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		1ECAC4F11D5799B5006126D1 /* LKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4F01D5799B5006126D1 /* LKUtils.swift */; };
+		1ECAC4F41D57A14C006126D1 /* LKCoreDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4F31D57A14C006126D1 /* LKCoreDataBase.swift */; };
+		1ECAC4FB1D57A559006126D1 /* Lookr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC4F91D57A559006126D1 /* Lookr.xcdatamodeld */; };
+		1ECAC5041D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC5021D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift */; };
+		1ECAC5051D57A6F0006126D1 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAC5031D57A6F0006126D1 /* UserEntity.swift */; };
 		CE1C9E06DAE5FC9D560C3E15 /* libPods-Lookr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 202CDF23F784A20F83392D1F /* libPods-Lookr.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,10 @@
 		1ECAC4EC1D579736006126D1 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = ../../ObjC_Utils/utils/Utils.h; sourceTree = "<group>"; };
 		1ECAC4ED1D579736006126D1 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = ../../ObjC_Utils/utils/Utils.m; sourceTree = "<group>"; };
 		1ECAC4F01D5799B5006126D1 /* LKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKUtils.swift; sourceTree = "<group>"; };
+		1ECAC4F31D57A14C006126D1 /* LKCoreDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKCoreDataBase.swift; sourceTree = "<group>"; };
+		1ECAC4FA1D57A559006126D1 /* Lookr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lookr.xcdatamodel; sourceTree = "<group>"; };
+		1ECAC5021D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1ECAC5031D57A6F0006126D1 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		202CDF23F784A20F83392D1F /* libPods-Lookr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lookr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B9C0BC392038F5E4D117C9 /* Pods-Lookr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.release.xcconfig"; sourceTree = "<group>"; };
 		CEC1FF155B8E2A7306322506 /* Pods-Lookr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lookr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lookr/Pods-Lookr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +117,8 @@
 		1E1CE9C61D5687E900854BF0 /* Lookr */ = {
 			isa = PBXGroup;
 			children = (
+				1ECAC4F51D57A52E006126D1 /* CoreData */,
+				1ECAC4F21D57A12F006126D1 /* Managers */,
 				1ECAC4EA1D579721006126D1 /* Utils */,
 				1ECAC4E71D579545006126D1 /* Models */,
 				1ECAC4DB1D56A4C4006126D1 /* External */,
@@ -212,6 +222,24 @@
 				1ECAC4F01D5799B5006126D1 /* LKUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		1ECAC4F21D57A12F006126D1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4F31D57A14C006126D1 /* LKCoreDataBase.swift */,
+			);
+			path = Managers;
+			sourceTree = SOURCE_ROOT;
+		};
+		1ECAC4F51D57A52E006126D1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1ECAC4F91D57A559006126D1 /* Lookr.xcdatamodeld */,
+				1ECAC5021D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift */,
+				1ECAC5031D57A6F0006126D1 /* UserEntity.swift */,
+			);
+			path = CoreData;
 			sourceTree = SOURCE_ROOT;
 		};
 		417A6D6381F13F46FD135579 /* Pods */ = {
@@ -363,13 +391,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ECAC4EF1D579736006126D1 /* Utils.m in Sources */,
+				1ECAC5041D57A6F0006126D1 /* UserEntity+CoreDataProperties.swift in Sources */,
+				1ECAC4FB1D57A559006126D1 /* Lookr.xcdatamodeld in Sources */,
 				1ECAC4B41D56899C006126D1 /* LKBaseAPIService.swift in Sources */,
 				1ECAC4EE1D579736006126D1 /* SwiftUtils.swift in Sources */,
 				1ECAC4D41D56A09C006126D1 /* LKNavigationController.swift in Sources */,
+				1ECAC4F41D57A14C006126D1 /* LKCoreDataBase.swift in Sources */,
 				1ECAC4E41D56A5EE006126D1 /* LKFacebookService.swift in Sources */,
 				1ECAC4D21D56A01D006126D1 /* LKLoginViewController.swift in Sources */,
 				1ECAC4E91D579553006126D1 /* LKFacebookUserModel.swift in Sources */,
 				1ECAC4BB1D569272006126D1 /* LKRequestService.swift in Sources */,
+				1ECAC5051D57A6F0006126D1 /* UserEntity.swift in Sources */,
 				1ECAC4F11D5799B5006126D1 /* LKUtils.swift in Sources */,
 				1E1CE9C81D5687E900854BF0 /* AppDelegate.swift in Sources */,
 			);
@@ -531,6 +563,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1ECAC4F91D57A559006126D1 /* Lookr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1ECAC4FA1D57A559006126D1 /* Lookr.xcdatamodel */,
+			);
+			currentVersion = 1ECAC4FA1D57A559006126D1 /* Lookr.xcdatamodel */;
+			path = Lookr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1E1CE9BC1D5687E900854BF0 /* Project object */;
 }

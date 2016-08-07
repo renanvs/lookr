@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="facebookID" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="isMe" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="photoURI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qtyFollowers" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="qtyFollowings" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="qtyPublications" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserEntity" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>
