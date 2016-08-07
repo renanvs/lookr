@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "116C3FA8CD7556D63826150D3E52D6AAD6F8D43F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "116C3FA8CD7556D63826150D3E52D6AAD6F8D43F" : 0,
+    "5289EA39FDC0C50AE45BC6BEED8933F1E7A365D1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8D8B9839-579D-46CC-ACD3-30FEFC6DD6B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "116C3FA8CD7556D63826150D3E52D6AAD6F8D43F" : "lookr\/",
+    "5289EA39FDC0C50AE45BC6BEED8933F1E7A365D1" : "ObjC_Utils\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Lookr",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Lookr.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/renanvs\/lookr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "116C3FA8CD7556D63826150D3E52D6AAD6F8D43F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:renanvs\/ObjC_Utils.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5289EA39FDC0C50AE45BC6BEED8933F1E7A365D1"
+    }
+  ]
+}
