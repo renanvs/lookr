@@ -16,6 +16,14 @@ class LKRequestService: LKBaseAPIService{
         let header = ["Token" : "804160e1-ab06-4fdb-8823-53c6948eafad"]
         
         LKBaseAPIService.requestGET(url, params: params, header: header, success: success, error: error)
+    }
+    
+    class func POST(service: String, params : [String : AnyObject]?, success : ((AnyObject?)->())?, error : ((NSError?, NSURLResponse?)->())?){
+        
+        let url = "\(baseAPIPath())\(service)"
+        let header = ["Token" : "804160e1-ab06-4fdb-8823-53c6948eafad"]
+        
+        LKBaseAPIService.requestPOST(url, params: params, header: header, isJsonSerializer: true, success: success, error: error)
         
     }
     
