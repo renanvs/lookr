@@ -21,7 +21,11 @@ class LKLoginViewController: UIViewController {
                 if error != nil{
                     LKUtils.simpleAlert(error!.localizedDescription)
                 }else{
-                    LKUtils.simpleAlert(userModel!.description)
+                    LKUserRequestService.createUserWithFacebookModel(userModel!, success: { (userEntity) in
+                        LKUtils.simpleAlert(userEntity.description)
+                        }, error: { (error) in
+                            LKUtils.simpleAlert(error.localizedDescription)
+                    })
                 }
             })
         }else{
@@ -31,7 +35,11 @@ class LKLoginViewController: UIViewController {
                 }else if cancelByUser{
                     LKUtils.simpleAlert("User Canceled")
                 }else{
-                    LKUtils.simpleAlert(facebookUser!.description)
+                    LKUserRequestService.createUserWithFacebookModel(facebookUser!, success: { (userEntity) in
+                        LKUtils.simpleAlert(userEntity.description)
+                        }, error: { (error) in
+                            LKUtils.simpleAlert(error.localizedDescription)
+                    })
                 }
             })
         }
