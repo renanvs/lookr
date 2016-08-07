@@ -32,7 +32,7 @@ class LKFacebookService: NSObject {
     }
     
     class func requestUserData(result : (userModel : LKFacebookUserModel?, error : NSError?)->()){
-        let request = FBSDKGraphRequest(graphPath: "/me?fields=id,name,first_name,last_name,email", parameters:nil, HTTPMethod: "GET")
+        let request = FBSDKGraphRequest(graphPath: "/me?fields=id,name,first_name,last_name,email,birthday", parameters:nil, HTTPMethod: "GET")
         request.startWithCompletionHandler({ (connection, resultRequest, e) in
             if (e != nil){
                 result(userModel: nil, error: e)
@@ -40,8 +40,21 @@ class LKFacebookService: NSObject {
                 let name = resultRequest.safeStringForKey("name")
                 let identifier = resultRequest.safeStringForKey("id")
                 let email = resultRequest.safeStringForKey("email")
-                let facebookModel = LKFacebookUserModel(identifier: identifier, name: name, email: email)
-                result(userModel: facebookModel, error: nil)
+                let birthday = resultRequest.safeStringForKey("birthday")
+                let facebookModel = LKFacebookUserModel(identifier: identifier, name: name, email: email, birthday: birthday)
+                
+                let profileImageURI = "/\(identifier)/?fields=picture.type(large)"
+                
+                FBSDKGraphRequest(graphPath: profileImageURI, parameters: nil, HTTPMethod: "GET").startWithCompletionHandler({ (connection, resultRequest, e) in
+                    let picDic = resultRequest.objectForKey("picture")
+                    let dataDic = picDic?.objectForKey("data")
+                    let imageUri = dataDic?.safeStringForKey("url")
+                    facebookModel.imageURI = imageUri
+                    
+                    result(userModel: facebookModel, error: nil)
+                })
+                
+                
             }
         })
     }
