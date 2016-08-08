@@ -42,4 +42,14 @@ class LKCoreDataBase: NSObject {
         managedObjectContext.persistentStoreCoordinator = coodinator
         return managedObjectContext
     }()
+    
+    class func save(){
+        let ctx = LKCoreDataBase.sharedInstance.managedObjectContext
+        
+        do{
+            try ctx.save()
+        }catch{
+            print(error)
+        }
+    }
 }
