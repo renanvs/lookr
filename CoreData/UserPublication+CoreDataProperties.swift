@@ -1,5 +1,5 @@
 //
-//  UserEntity+CoreDataProperties.swift
+//  UserPublication+CoreDataProperties.swift
 //  Lookr
 //
 //  Created by renan silva on 8/7/16.
@@ -12,11 +12,7 @@
 import Foundation
 import CoreData
 
-extension UserEntity {
+extension UserPublication {
 
-    @NSManaged var identifier: String!
-    @NSManaged var name: String!
-    @NSManaged var photoURI: String?
-    @NSManaged var publications: NSSet?
 
 }

@@ -1,5 +1,5 @@
 //
-//  UserEntity+CoreDataProperties.swift
+//  ProfileEntity+CoreDataProperties.swift
 //  Lookr
 //
 //  Created by renan silva on 8/7/16.
@@ -12,11 +12,16 @@
 import Foundation
 import CoreData
 
-extension UserEntity {
+extension ProfileEntity {
 
+    @NSManaged var email: String!
+    @NSManaged var facebookID: String!
     @NSManaged var identifier: String!
     @NSManaged var name: String!
     @NSManaged var photoURI: String?
-    @NSManaged var publications: NSSet?
+    @NSManaged var qtyFollowers: NSNumber!
+    @NSManaged var qtyFollowings: NSNumber!
+    @NSManaged var qtyPublications: NSNumber!
+    @NSManaged var birthday: String?
 
 }

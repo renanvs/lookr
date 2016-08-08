@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Xcode 7.0">
-    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+    <entity name="BasePublicationEntity" representedClassName=".BasePublicationEntity" syncable="YES">
+        <attribute name="dateStr" attributeType="String" syncable="YES"/>
+        <attribute name="disliked" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="liked" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="qtyComments" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="qtyDislikes" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="qtyLikes" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="images" toMany="YES" deletionRule="Nullify" destinationEntity="PublicationImage" inverseName="publication" inverseEntity="PublicationImage" syncable="YES"/>
+        <relationship name="user" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="publications" inverseEntity="UserEntity" syncable="YES"/>
+    </entity>
+    <entity name="ProfileEntity" representedClassName="ProfileEntity" syncable="YES">
         <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="email" attributeType="String" syncable="YES"/>
         <attribute name="facebookID" attributeType="String" syncable="YES"/>
         <attribute name="identifier" attributeType="String" syncable="YES"/>
-        <attribute name="isMe" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="photoURI" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="qtyFollowers" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="qtyFollowings" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="qtyPublications" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
     </entity>
+    <entity name="PublicationImage" representedClassName=".PublicationImage" syncable="YES">
+        <attribute name="imageURI" attributeType="String" syncable="YES"/>
+        <attribute name="userIdentifier" attributeType="String" syncable="YES"/>
+        <relationship name="publication" maxCount="1" deletionRule="Nullify" destinationEntity="BasePublicationEntity" inverseName="images" inverseEntity="BasePublicationEntity" syncable="YES"/>
+    </entity>
+    <entity name="TimelinePublicationEntity" representedClassName=".TimelinePublicationEntity" parentEntity="BasePublicationEntity" syncable="YES"/>
+    <entity name="UserEntity" representedClassName=".UserEntity" syncable="YES">
+        <attribute name="identifier" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="photoURI" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="publications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BasePublicationEntity" inverseName="user" inverseEntity="BasePublicationEntity" syncable="YES"/>
+    </entity>
+    <entity name="UserPublication" representedClassName=".UserPublication" parentEntity="BasePublicationEntity" syncable="YES"/>
     <elements>
-        <element name="UserEntity" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="ProfileEntity" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="BasePublicationEntity" positionX="-63" positionY="54" width="128" height="195"/>
+        <element name="UserEntity" positionX="-54" positionY="90" width="128" height="105"/>
+        <element name="PublicationImage" positionX="-36" positionY="108" width="128" height="90"/>
+        <element name="TimelinePublicationEntity" positionX="-18" positionY="126" width="128" height="45"/>
+        <element name="UserPublication" positionX="0" positionY="135" width="128" height="45"/>
     </elements>
 </model>
