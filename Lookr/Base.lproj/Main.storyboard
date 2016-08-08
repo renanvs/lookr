@@ -69,8 +69,23 @@
                     <view key="view" contentMode="scaleToFill" id="sbZ-kG-T2S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nvO-of-kcN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.068776939655172412" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nvO-of-kcN" firstAttribute="leading" secondItem="sbZ-kG-T2S" secondAttribute="leading" id="GYw-zm-C1m"/>
+                            <constraint firstAttribute="trailing" secondItem="nvO-of-kcN" secondAttribute="trailing" id="LWz-wU-PHj"/>
+                            <constraint firstItem="mpW-RI-ZSw" firstAttribute="top" secondItem="nvO-of-kcN" secondAttribute="bottom" id="T5t-e4-Pho"/>
+                            <constraint firstItem="nvO-of-kcN" firstAttribute="top" secondItem="sbZ-kG-T2S" secondAttribute="top" id="jkZ-DU-tkk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="nvO-of-kcN" id="h3F-ZU-DwL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7L-RJ-nLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

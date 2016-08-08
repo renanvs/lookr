@@ -13,7 +13,10 @@ class LKRequestService: LKBaseAPIService{
     class func GET(service: String, params : [String : AnyObject]?, success : ((AnyObject?)->())?, error : ((NSError?, NSURLResponse?)->())?){
         
         let url = "\(baseAPIPath())\(service)"
-        let header = ["Token" : "804160e1-ab06-4fdb-8823-53c6948eafad"]
+        var header = ["Token" : "804160e1-ab06-4fdb-8823-53c6948eafad"]
+        if ProfileEntity.hasProfileLogged() {
+            header["IdUser"] = ProfileEntity.getMyProfileEntity().identifier
+        }
         
         LKBaseAPIService.requestGET(url, params: params, header: header, success: success, error: error)
     }
