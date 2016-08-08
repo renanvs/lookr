@@ -11,7 +11,7 @@ import UIKit
 
 class LKFacebookService: NSObject {
     
-    class func login(result : ((error : NSError?, cancelByUser : Bool, facebookUser : LKFacebookUserModel?)->())){
+    class func login(result : ((error : NSError?, cancelByUser : Bool, facebookUser : LKFacebookProfileModel?)->())){
         let fbLoginManager = FBSDKLoginManager()
         
         fbLoginManager.logInWithReadPermissions(["public_profile"], fromViewController: nil) { (loginResult, e) in
@@ -31,7 +31,7 @@ class LKFacebookService: NSObject {
         }
     }
     
-    class func requestUserData(result : (userModel : LKFacebookUserModel?, error : NSError?)->()){
+    class func requestUserData(result : (userModel : LKFacebookProfileModel?, error : NSError?)->()){
         let request = FBSDKGraphRequest(graphPath: "/me?fields=id,name,first_name,last_name,email,birthday", parameters:nil, HTTPMethod: "GET")
         request.startWithCompletionHandler({ (connection, resultRequest, e) in
             if (e != nil){
@@ -41,7 +41,7 @@ class LKFacebookService: NSObject {
                 let identifier = resultRequest.safeStringForKey("id")
                 let email = resultRequest.safeStringForKey("email")
                 let birthday = resultRequest.safeStringForKey("birthday")
-                let facebookModel = LKFacebookUserModel(identifier: identifier, name: name, email: email, birthday: birthday)
+                let facebookModel = LKFacebookProfileModel(identifier: identifier, name: name, email: email, birthday: birthday)
                 
                 let profileImageURI = "/\(identifier)/?fields=picture.type(large)"
                 

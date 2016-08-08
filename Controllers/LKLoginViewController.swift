@@ -21,7 +21,7 @@ class LKLoginViewController: UIViewController {
                 if error != nil{
                     LKUtils.simpleAlert(error!.localizedDescription)
                 }else{
-                    LKUserRequestService.createUserWithFacebookModel(userModel!, success: { (userEntity) in
+                    LKProfileRequestService.createProfileWithFacebookModel(userModel!, success: { (userEntity) in
                         self.presentViewController(LKUtils.getCorrectInitialController(), animated: true, completion: nil)
                         }, error: { (error) in
                             LKUtils.simpleAlert(error.localizedDescription)
@@ -35,7 +35,7 @@ class LKLoginViewController: UIViewController {
                 }else if cancelByUser{
                     LKUtils.simpleAlert("User Canceled")
                 }else{
-                    LKUserRequestService.createUserWithFacebookModel(facebookUser!, success: { (userEntity) in
+                    LKProfileRequestService.createProfileWithFacebookModel(facebookUser!, success: { (userEntity) in
                         self.presentViewController(LKUtils.getCorrectInitialController(), animated: true, completion: nil)
                         }, error: { (error) in
                             LKUtils.simpleAlert(error.localizedDescription)

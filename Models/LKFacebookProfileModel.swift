@@ -1,5 +1,5 @@
 //
-//  LKFacebookUserModel.swift
+//  LKFacebookProfileModel.swift
 //  Lookr
 //
 //  Created by renan silva on 8/7/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LKFacebookUserModel: NSObject {
+class LKFacebookProfileModel: NSObject {
     var name : String!
     var email : String!
     var identifier : String!

@@ -18,7 +18,7 @@ class LKUtils: NSObject {
     
     class func getCorrectInitialController() -> UIViewController{
         
-        if UserEntity.hasUserLogged(){
+        if ProfileEntity.hasProfileLogged(){
             let timeLineController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("LKTimeLineViewController") as!LKTimeLineViewController
             let navigationController = LKNavigationController(rootViewController: timeLineController)
             return navigationController
