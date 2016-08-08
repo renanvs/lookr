@@ -18,7 +18,7 @@ class PublicationImage: NSManagedObject {
         let listSet = NSMutableSet()
         
         for dic in list{
-            let photoURI = dic.safeStringForKey("URLPhoto")
+            let photoURI = dic.safeStringForKey("URL")
             let predicate = NSPredicate(format: "imageURI == %@", photoURI)
             var publicationImage = PublicationImage.LK_FindUniqueWithPredicate(predicate) as? PublicationImage
             if publicationImage == nil{

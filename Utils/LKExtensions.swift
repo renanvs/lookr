@@ -13,6 +13,11 @@ class LKExtensions: NSObject {
 
 }
 
+extension UIImage{
+    class func LK_Image(url:String?) -> UIImage?{
+        return LKDownloadManager.imageFromUrl(url)
+    }
+}
 
 extension NSManagedObject{
     class func LK_CreateEntity() -> NSManagedObject{

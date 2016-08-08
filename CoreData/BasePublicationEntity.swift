@@ -52,5 +52,12 @@ class BasePublicationEntity: NSManagedObject {
         
         return entity!
     }
+    
+    func defaultPublicationImageEntity() -> PublicationImage?{
+        if self.images.count == 0{
+            return nil
+        }
+        return self.images.allObjects.first as? PublicationImage
+    }
 
 }

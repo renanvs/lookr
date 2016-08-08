@@ -19,6 +19,8 @@ class LKPublicationCell: UITableViewCell {
     @IBOutlet var dislikeButton : UIButton!
     @IBOutlet var commentsButton : UIButton!
     
+    var publicationEntity : BasePublicationEntity!
+    
     @IBAction func likeButtonHandler(){
         print("likeButtonHandler Pressed")
     }
@@ -45,14 +47,41 @@ class LKPublicationCell: UITableViewCell {
     }
     
     func setupWithPublication(publication:BasePublicationEntity){
-//        userImage
-//        publicationeImage
+        
+        self.publicationEntity = publication
+        
         userLabel.text = publication.text
         publicationTime.text = publication.dateStr
         
         likeButton.setTitle(publication.qtyLikes.stringValue, forState: UIControlState.Normal)
         dislikeButton.setTitle(publication.qtyDislikes.stringValue, forState: UIControlState.Normal)
         commentsButton.setTitle(publication.qtyComments.stringValue, forState: UIControlState.Normal)
+        
+        setImages()
+        
+    }
+    
+    func setImages(){
+        let publicationURI = publicationEntity.defaultPublicationImageEntity()?.imageURI
+        publicationeImage.image = UIImage.LK_Image(publicationURI)
+        
+        if publicationeImage.image == nil{
+            LKDownloadManager.downloadWith(publicationURI, identifier: publicationEntity.identifier, success: { (identifier) in
+                self.publicationeImage.image = UIImage.LK_Image(publicationURI)
+                }, error: { (identifier) in
+            })
+        }
+        
+        let userURI = publicationEntity.user.photoURI
+        userImage.image = UIImage.LK_Image(userURI)
+        
+        if userImage.image == nil{
+            LKDownloadManager.downloadWith(userURI, identifier: publicationEntity.identifier, success: { (identifier) in
+                self.userImage.image = UIImage.LK_Image(userURI)
+                }, error: { (identifier) in
+            })
+        }
+        
     }
 
 }
