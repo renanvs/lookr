@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LKTimeLineViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LKTimeLineViewController: LKBaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     var list = [TimelinePublicationEntity]()
     @IBOutlet var tableView : UITableView!

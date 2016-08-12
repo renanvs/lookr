@@ -11,6 +11,8 @@ import UIKit
 class LKPublicationCell: UITableViewCell {
     
     @IBOutlet var userImage : UIImageView!
+    @IBOutlet var borderUserView : UIView!
+    
     @IBOutlet var publicationeImage : UIImageView!
     @IBOutlet var userLabel : UILabel!
     @IBOutlet var publicationTime : UILabel!
@@ -48,26 +50,46 @@ class LKPublicationCell: UITableViewCell {
     
     func setupWithPublication(publication:BasePublicationEntity){
         
+        resetImages()
+        
         self.publicationEntity = publication
-        
         userLabel.text = publication.text
-        publicationTime.text = publication.dateStr
-        
+        publicationTime.text = NSDate.LK_AgoTextValue(publication.dateStr)
         likeButton.setTitle(publication.qtyLikes.stringValue, forState: UIControlState.Normal)
         dislikeButton.setTitle(publication.qtyDislikes.stringValue, forState: UIControlState.Normal)
         commentsButton.setTitle(publication.qtyComments.stringValue, forState: UIControlState.Normal)
         
+        setupLayout()
         setImages()
         
     }
     
+    private func setupLayout(){
+        userImage.LK_RoundBorderAsCircle()
+        borderUserView.LK_RoundBorderAsCircle()
+        borderUserView.backgroundColor = UIColor.whiteColor()
+        likeButton.clearColor()
+        dislikeButton.clearColor()
+        commentsButton.clearColor()
+        self.clearColorCellAndContent()
+    }
+    
+    func resetImages(){
+        publicationeImage.image = nil
+        userImage.image = nil
+    }
+    
     func setImages(){
         let publicationURI = publicationEntity.defaultPublicationImageEntity()?.imageURI
-        publicationeImage.image = UIImage.LK_Image(publicationURI)
+        publicationeImage.image = UIImage.LK_ScreenImage(publicationURI)
         
         if publicationeImage.image == nil{
-            LKDownloadManager.downloadWith(publicationURI, identifier: publicationEntity.identifier, success: { (identifier) in
-                self.publicationeImage.image = UIImage.LK_Image(publicationURI)
+            LKUtils.downloadAndGenerateImages(publicationURI, identifier: publicationEntity.identifier, success: { (identifier) in
+                
+                if identifier == self.publicationEntity.identifier{
+                    self.publicationeImage.image = UIImage.LK_ScreenImage(publicationURI)
+                }
+                
                 }, error: { (identifier) in
             })
         }
@@ -77,7 +99,11 @@ class LKPublicationCell: UITableViewCell {
         
         if userImage.image == nil{
             LKDownloadManager.downloadWith(userURI, identifier: publicationEntity.identifier, success: { (identifier) in
-                self.userImage.image = UIImage.LK_Image(userURI)
+                
+                if identifier == self.publicationEntity.identifier{
+                    self.userImage.image = UIImage.LK_Image(userURI)
+                }
+                
                 }, error: { (identifier) in
             })
         }

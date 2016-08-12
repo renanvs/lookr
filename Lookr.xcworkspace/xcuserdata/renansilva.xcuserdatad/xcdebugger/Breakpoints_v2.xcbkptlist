@@ -100,12 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Utils/LKExtensions.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492664519.106405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "LK_CreateEntity()"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "LK_NotExistImageAndCanDownload(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -228,7 +228,7 @@
                   moduleName = "Lookr"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
-                  timestampString = "492309003.306606"
+                  timestampString = "492666207.345281"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -243,7 +243,7 @@
                   moduleName = "Lookr"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
-                  timestampString = "492309003.30686"
+                  timestampString = "492666207.345531"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -308,13 +308,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Utils/LKExtensions.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492664519.106405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "LK_FindAllWithPredicate(_:)"
-            landmarkType = "5">
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "NSManagedObject"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -324,27 +324,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Utils/LKExtensions.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492664519.106405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "LK_FindAllWithPredicate(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Utils/LKExtensions.swift"
-            timestampString = "492318013.574874"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "entityName()"
             landmarkType = "5">
          </BreakpointContent>
@@ -356,12 +340,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Utils/LKExtensions.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492664519.106405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "LK_CreateEntity()"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "LK_NotExistImageAndCanDownload(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664519.106405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "LK_NotExistImageAndCanDownload(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -420,11 +420,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Views/Cells/LKPublicationCell.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492660626.700136"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "heightCell()"
             landmarkType = "5">
          </BreakpointContent>
@@ -452,12 +452,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Managers/LKDownloadManager.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492397552.769088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "getFullPath(_:)"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "getFullPath(_:appendName:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -473,7 +473,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "dataFromUrl(_:)"
+            landmarkName = "dataFromUrl(_:appendName:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -484,12 +484,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Managers/LKDownloadManager.swift"
-            timestampString = "492318013.574874"
+            timestampString = "492396926.427561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "dataFromUrl(_:)"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "dataFromUrl(_:appendName:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -570,6 +570,438 @@
             startingLineNumber = "53"
             endingLineNumber = "53"
             landmarkName = "createPublicationWithDictionary(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/Cells/LKPublicationCell.swift"
+            timestampString = "492662719.292088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "setImages()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lookr.LKPublicationCell.setImages () -&gt; ()"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Views/Cells/LKPublicationCell.swift"
+                  timestampString = "492396959.315691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "1206">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lookr.LKPublicationCell.(setImages () -&gt; ()).(closure #1)"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Views/Cells/LKPublicationCell.swift"
+                  timestampString = "492396959.315913"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/Cells/LKPublicationCell.swift"
+            timestampString = "492662719.292088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "setImages()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKUtils.swift"
+            timestampString = "492397001.737267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "downloadAndGenerateImages(_:identifier:success:error:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKUtils.downloadAndGenerateImages (Swift.Optional&lt;Swift.String&gt;, identifier : Swift.String, success : (identifier : Swift.String) -&gt; (), error : (identifier : Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Utils/LKUtils.swift"
+                  timestampString = "492397005.786001"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "105">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKUtils.(downloadAndGenerateImages (Swift.Optional&lt;Swift.String&gt;, identifier : Swift.String, success : (identifier : Swift.String) -&gt; (), error : (identifier : Swift.String) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Utils/LKUtils.swift"
+                  timestampString = "492397005.786257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "71">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664519.106405"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "LK_ScreenImage(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Managers/LKDownloadManager.swift"
+            timestampString = "492397552.769088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "imageFromUrl(_:appendName:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Managers/LKDownloadManager.swift"
+            timestampString = "492397552.769088"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "dataFromUrl(_:appendName:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Managers/LKDownloadManager.swift"
+            timestampString = "492397617.210873"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "imageFromUrl(_:appendName:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Managers/LKDownloadManager.swift"
+            timestampString = "492397619.48469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "imageFromUrl(_:appendName:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Views/Cells/LKPublicationCell.swift"
+            timestampString = "492662980.374835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "setupWithPublication(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664106.338869"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "LK_AgoTextValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664133.933998"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "LK_AgoTextValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664140.878395"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "LK_AgoTextValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664148.988185"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "LK_AgoTextValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Utils/LKExtensions.swift"
+            timestampString = "492664175.814679"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "LK_AgoTextValue(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LKFacebookService.swift"
+            timestampString = "492665411.411996"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "requestUserData(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKFacebookService.(requestUserData ((userModel : Swift.Optional&lt;Lookr.LKFacebookProfileModel&gt;, error : Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Services/LKFacebookService.swift"
+                  timestampString = "492665429.215321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "3566">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKFacebookService.(requestUserData ((userModel : Swift.Optional&lt;Lookr.LKFacebookProfileModel&gt;, error : Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Services/LKFacebookService.swift"
+                  timestampString = "492665429.215602"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LKFacebookService.swift"
+            timestampString = "492665449.153264"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "requestUserData(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LKFacebookService.swift"
+            timestampString = "492665454.107315"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "requestUserData(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LKProfileRequestService.swift"
+            timestampString = "492666199.592971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "createProfileWithFacebookModel(_:success:error:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKProfileRequestService.createProfileWithFacebookModel (Lookr.LKFacebookProfileModel, success : (profileEntity : Lookr.ProfileEntity) -&gt; (), error : (error : __ObjC.NSError) -&gt; ()) -&gt; ()"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
+                  timestampString = "492666207.358208"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1670">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Lookr.LKProfileRequestService.(createProfileWithFacebookModel (Lookr.LKFacebookProfileModel, success : (profileEntity : Lookr.ProfileEntity) -&gt; (), error : (error : __ObjC.NSError) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "Lookr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
+                  timestampString = "492666207.358692"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Services/LKProfileRequestService.swift"
+            timestampString = "492666224.395495"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "createProfileWithFacebookModel(_:success:error:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

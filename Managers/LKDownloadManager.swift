@@ -42,7 +42,7 @@ class LKDownloadManager: NSObject {
         let manager = AFURLSessionManager(sessionConfiguration: config)
         let request = NSURLRequest(string: url)
         let task = manager.downloadTaskWithRequest(request, progress: nil, destination: { (urlObj, response) -> NSURL in
-            return getFullPath(url!)
+            return getFullPath(url!, appendName: nil)
             }) { (response, urlObj, e) in
                 if e != nil{
                     error(identifier: identifier)
@@ -55,23 +55,34 @@ class LKDownloadManager: NSObject {
         
     }
     
-    class func dataFromUrl(url : String?) -> NSData?{
+    class func existFileByUrl(url : String, appendName:String?) -> Bool{
+        let exist = NSFileManager.defaultManager().fileExistsAtPath(getFullPath(url, appendName: appendName).path!)
+        return exist
+    }
+    
+    class func dataFromUrl(url : String?, appendName : String?) -> NSData?{
         if String.isEmptyStr(url){
             return nil
         }
         
-        let exist = NSFileManager.defaultManager().fileExistsAtPath(getFullPath(url!).path!)
         
-        if exist {
-            let data = NSData(contentsOfURL: NSURL(string: url!)!)
+//        var urlFinal = url!;
+//        if !(String.isEmptyStr(appendName)){
+//            urlFinal = fileNameByUrl(url!, appendName: appendName!)
+//        }
+        
+        let path = getFullPath(url!, appendName: appendName)
+        
+        if existFileByUrl(url!, appendName: appendName) {
+            let data = NSData(contentsOfURL: path)
             return data
         }
         
         return nil
     }
     
-    class func imageFromUrl(url : String?) -> UIImage?{
-        let data = dataFromUrl(url)
+    class func imageFromUrl(url : String?, appendName : String?) -> UIImage?{
+        let data = dataFromUrl(url, appendName : appendName)
         
         if data == nil{
             return nil
@@ -81,17 +92,21 @@ class LKDownloadManager: NSObject {
         return image
     }
     
-    class func getFullPath(urlStr : String) -> NSURL{
+    class func getFullPath(urlStr : String, appendName : String?) -> NSURL{
         
         let directory = try! NSFileManager.defaultManager().URLForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomain: NSSearchPathDomainMask.UserDomainMask, appropriateForURL: nil, create: false)
-        let fullPath = directory.URLByAppendingPathComponent(fileNameByUrl(urlStr))
+        let fullPath = directory.URLByAppendingPathComponent(fileNameByUrl(urlStr, appendName: appendName))
         return fullPath
     }
     
-    class func fileNameByUrl(url:String) -> String{
+    class func fileNameByUrl(url:String, appendName : String?) -> String{
         let fileExtension = (url as NSString).pathExtension
         
-        let md5Name = (url as NSString).MD5String()
+        var md5Name = (url as NSString).MD5String()
+        
+        if !(String.isEmptyStr(appendName)){
+            md5Name = "\(md5Name)\(appendName!)"
+        }
         
         if String.isEmptyStr(fileExtension){
             return "\(md5Name)"

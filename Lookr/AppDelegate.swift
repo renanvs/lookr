@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = LKUtils.getCorrectInitialController()
         window?.makeKeyAndVisible()
         
+        //Utils.showFonts()
+        
         return true
     }
     
