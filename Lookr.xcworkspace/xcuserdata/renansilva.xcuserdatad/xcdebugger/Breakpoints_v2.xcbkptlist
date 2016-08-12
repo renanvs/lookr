@@ -372,11 +372,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controllers/LKTimeLineViewController.swift"
-            timestampString = "492310789.875954"
+            timestampString = "492671022.283924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -388,28 +388,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controllers/LKTimeLineViewController.swift"
-            timestampString = "492310789.875954"
+            timestampString = "492671022.283924"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controllers/LKTimeLineViewController.swift"
-            timestampString = "492312304.205042"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -644,11 +628,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Utils/LKUtils.swift"
-            timestampString = "492397001.737267"
+            timestampString = "492670885.714654"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "downloadAndGenerateImages(_:identifier:success:error:)"
             landmarkType = "5">
             <Locations>
@@ -964,7 +948,7 @@
                   moduleName = "Lookr"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
-                  timestampString = "492666207.358208"
+                  timestampString = "492670569.244897"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -979,7 +963,7 @@
                   moduleName = "Lookr"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/renansilva/projects/lookr/Services/LKProfileRequestService.swift"
-                  timestampString = "492666207.358692"
+                  timestampString = "492670569.245109"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "25"
@@ -1002,6 +986,22 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "createProfileWithFacebookModel(_:success:error:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controllers/base/LKTabBarController.swift"
+            timestampString = "492670885.714654"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "tabBarController(_:didSelectViewController:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

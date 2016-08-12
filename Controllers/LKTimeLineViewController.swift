@@ -15,6 +15,7 @@ class LKTimeLineViewController: LKBaseViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorColor = UIColor.clearColor()
         list = TimelinePublicationEntity.getAll()
         
         let nib = UINib(nibName: "LKPublicationCell", bundle: nil)
